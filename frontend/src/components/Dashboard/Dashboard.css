@@ -1,0 +1,45 @@
+#stats{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+    height: 450px;
+}
+
+#chart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+}
+
+#chart-small{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5%;
+    height:45%;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 5%;
+    width: 22.5%;
+    height: 100%;
+}
+
+@media (min-width: 1440px) {
+    #stats{
+        height: 636px;
+    }
+
+    #chart-small{
+        height: 50%;
+    }
+
+    #cards {
+        grid-row-gap: 0%;
+    }
+}

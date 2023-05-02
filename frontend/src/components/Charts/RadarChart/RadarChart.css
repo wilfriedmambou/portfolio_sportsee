@@ -1,0 +1,32 @@
+#radarchart{
+    width: 31%;
+    height: 100%;
+    background-color: #282D30;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+    border-radius: 5px;
+}
+
+/* Text position */
+.recharts-polar-angle-axis-tick:nth-child(1) > text, 
+.recharts-polar-angle-axis-tick:nth-child(5) > text {
+    transform: translateY(7px);
+}
+
+.recharts-polar-angle-axis-tick:nth-child(2) > text, 
+.recharts-polar-angle-axis-tick:nth-child(4) > text {
+    transform: translateY(6px);
+}
+
+.recharts-polar-angle-axis > g > g:nth-child(3) > text {
+    transform: translateY(15px);
+}
+
+.recharts-polar-angle-axis-tick:nth-child(6) > text {
+    transform: translateY(-5px);
+}
+
+@media (min-width: 1440px) {
+    #radarchart text > tspan{
+        font-size: 12px;
+    }
+}
